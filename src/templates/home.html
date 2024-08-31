@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+<!-- title -->
+<!--  -->
+{% block head_title %}
+<!--  -->
+{{ page_title }} - {{ block.super }} {% endblock head_title %}
+
+<!--  -->
+{% block content %}
+<h1>{{page_title}}</h1>
+<h2>hello again</h2>
+
+{% include 'snippets/welcome-user-msg.html' %}
+<!--  -->
+Pagevisit : {{page_visit_count}} <br />
+Total : {{total_visit}}
+<!--  -->
+{% endblock content %}
